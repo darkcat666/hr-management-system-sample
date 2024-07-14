@@ -6,7 +6,7 @@
 
 ### バックエンド
 1. `backend`ディレクトリまで飛ぶ
-2. `.gradleew BootRun`と入力し、Spring Bootアプリケーションを立ち上げる。
+2. `.gradlew BootRun`と入力し、Spring Bootアプリケーションを立ち上げる。
 
 ### フロントエンド
 1. `HRManagementSystem.sln`をVisual Studioで立ち上げる。
