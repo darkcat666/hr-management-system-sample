@@ -1,0 +1,14 @@
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore user-specific project settings
+*.csproj.user
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
