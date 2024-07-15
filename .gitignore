@@ -1,38 +1,31 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
-!**/build/libs/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# IDEやエディタの設定ファイル
+.idea/
 .vscode/
+*.swp
+*.swo
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+
+# ログファイル
+*.log
+
+# 環境変数ファイル
+.env
+
+# Docker関連
+docker-compose.override.yml
+
+# バックエンドとフロントエンドの特定のファイルは個別の.gitignoreで管理
+/backend/*
+!/backend/.gitignore
+!/backend/src/
+!/backend/build.gradle
+!/backend/settings.gradle
+!/backend/gradlew
+!/backend/gradlew.bat
+
+/frontend/*
+!/frontend/.gitignore
+!/frontend/HRManagementSystem/
