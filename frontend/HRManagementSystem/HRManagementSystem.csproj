@@ -4,16 +4,29 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
   </PropertyGroup>
 
   <ItemGroup>
-    <Page Include="Views\MainWindow.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Helpers\RelayCommand.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Services\ApiService.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+    <Page Include="Views\MainWindow.xaml" />
   </ItemGroup>
 
 </Project>
+
