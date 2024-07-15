@@ -1,5 +1,4 @@
-﻿using System;
-using System.Net.Http;
+﻿using System.Net.Http;
 using System.Windows;
 using HRManagementSystem.Services;
 using HRManagementSystem.ViewModels;
@@ -16,7 +15,7 @@ namespace HRManagementSystem
             var mainViewModel = new MainViewModel(apiService);
 
             // Create and show the main window
-            var mainWindow = new HRManagementSystem.Views.MainWindow
+            var mainWindow = new Views.MainWindow
             {
                 DataContext = mainViewModel
             };

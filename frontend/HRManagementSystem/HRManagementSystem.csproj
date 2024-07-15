@@ -24,8 +24,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Include="App.xaml" />
-    <Page Include="Views\MainWindow.xaml" />
+    <Page Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>
